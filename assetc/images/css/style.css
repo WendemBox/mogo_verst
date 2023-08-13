@@ -204,6 +204,10 @@ nav {
   padding: 80px 0;
 }
 
+.section--gray {
+  background-color: #f8f8f8;
+}
+
 .section--devices {
   padding-bottom: 0;
   background: url("../images/12.jpg") center no-repeat;
@@ -370,5 +374,110 @@ nav {
   position: absolute;
   bottom: -60px;
   right: 0;
+  z-index: 1;
+}
+
+.wedo {
+  display: flex;
+}
+
+.wedo__item {
+  width: 50%;
+}
+
+.accordion__item {
+  margin-bottom: 10px;
+  border: solid 1px #e5e5e5;
+}
+
+.accordion__item.active .accordion__content {
+  display: block;
+}
+
+.accordion__item.active .accordion__header {
+  border-bottom-color: #e5e5e5;
+}
+.accordion__item.active .accordion__header:after {
+  transform: translateY(-50%) rotate(-45deg);
+  margin-top: 5px;
+}
+
+.accordion__header {
+  padding: 15px 20px 15px 65px;
+  position: relative;
+  border-bottom: solid 1px transparent;
+  cursor: pointer;
+}
+.accordion__header:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 1;
+  margin-top: 3px;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion__icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.accordion__title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.accordion__content {
+  display: none;
+  padding: 15px 20px;
+  color: #999999;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.revues {
+  padding: 0 110px;
+}
+
+.revues__text {
+  font-size: 24px;
+  color: #999999;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.revues__author {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+}
+
+.revues__author:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin-right: 10px;
+}
+
+.revues__item {
+  padding-left: 205px;
+  position: relative;
+}
+
+.revues__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
